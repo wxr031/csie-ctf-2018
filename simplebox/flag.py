@@ -5,7 +5,7 @@ bfdict = {'B': '>', 'a': '<', 'm': '+', 'b': '-', 'o': '.', 'O': ',', 'F': '[', 
 pat = 'BBFaamBBbxB(m*)Fa(m*)Bbxa(m*)aFbBbaxmBFabBFbxx'
 re_pat = re.compile(pat)
 flag = ''
-with open('data-6a04a913cf94d5869e9e90b22fcb5543', 'r') as fp:
+with open('data', 'r') as fp:
     code = fp.read()
     code = base64.b64decode(code.encode()).decode()
     flag_list = code.split('O')
