@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import base64, re
-bfdict = {'B': '>', 'a': '<', 'm': '+', 'b': '-', 'o': '.', 'O': ',', 'F': '[', 'x': ']', '\n': ''}
 pat = 'BBFaamBBbxB(m*)Fa(m*)Bbxa(m*)aFbBbaxmBFabBFbxx'
 re_pat = re.compile(pat)
 flag = ''
