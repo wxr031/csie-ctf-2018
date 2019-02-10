@@ -94,7 +94,7 @@ cipher = b''.join(bytes([i]) for i in cipher)
 cipher = binascii.hexlify(cipher)
 cipher = int(cipher, 16)
 
-# decrypt RSA using weiner's attack
+# decrypt RSA
 def extended_gcd(a, b):
 	if b == 0: return None, None
 	if b == 1: return 0, 1
